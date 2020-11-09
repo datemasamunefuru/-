@@ -15,6 +15,7 @@
                     <th class="report_name">氏名</th>
                     <th class="report_date">日付</th>
                     <th class="report_title">タイトル</th>
+                    <th class="report_content">内容</th>
                     <th class="report_business_status">商談状況</th>
                     <th class="report_action">操作</th>
                 </tr>
