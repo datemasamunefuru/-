@@ -30,6 +30,15 @@
 <textarea name="business_status" rows="10" cols="50">${report.business_status}</textarea>
 <br /><br />
 
+<label for="work_start">出勤時刻</label><br />
+<input type="text" name="work_start" value="${report.work_start}" />
+<br /><br />
+
+<label for="work_finish">退勤時刻</label><br />
+<input type="text" name="work_finish" value="${report.work_finish}" />
+<br /><br />
+
+
 <input type="hidden" name="_token" value="${_token}" />
 <button type="submit">投稿</button>
 

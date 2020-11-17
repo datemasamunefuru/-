@@ -59,6 +59,12 @@ public class Report {
     @Column(name = "business_status", nullable = false)
     private String business_status;
 
+    @Column(name = "work_start", nullable = false)
+    private Timestamp work_start;
+
+    @Column(name = "work_finish", nullable = false)
+    private Timestamp work_finish;
+
     @Column(name = "created_at", nullable = false)
     private Timestamp created_at;
 
@@ -79,6 +85,22 @@ public class Report {
 
     public void setEmployee(Employee employee) {
         this.employee = employee;
+    }
+
+    public Timestamp getWork_start() {
+        return work_start;
+    }
+
+    public void setWork_start(Timestamp work_start) {
+        this.work_start = work_start;
+    }
+
+    public Timestamp getWork_finish() {
+        return work_finish;
+    }
+
+    public void setWork_finish(Timestamp work_finish) {
+        this.work_finish = work_finish;
     }
 
     public Date getReport_date() {

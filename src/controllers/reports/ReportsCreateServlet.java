@@ -57,6 +57,9 @@ public class ReportsCreateServlet extends HttpServlet {
 
             r.setBusiness_status(request.getParameter("business_status"));
 
+            r.setWork_start(Timestamp.valueOf(rd_str+" "+request.getParameter("work_start")+":00"));
+            r.setWork_finish(Timestamp.valueOf(rd_str+" "+request.getParameter("work_finish")+":00"));
+
             Timestamp currentTime = new Timestamp(System.currentTimeMillis());
             r.setCreated_at(currentTime);
             r.setUpdated_at(currentTime);
